@@ -6,6 +6,7 @@ preview: https://codepen.io/Vignesh-Waran-the-styleful/pen/RwEOXGE
 
 Day - 02 Random Hex generator
 preview:
+https://codepen.io/Vignesh-Waran-the-styleful/pen/zYyQzwG
 
  
  
