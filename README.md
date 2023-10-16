@@ -8,5 +8,9 @@ Day - 02 Random Hex generator
 preview:
 https://codepen.io/Vignesh-Waran-the-styleful/pen/zYyQzwG
 
+Day - 03 Modal with Hex generator
+preview:
+
+
  
  
