@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: teal;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.btn{
+    padding: 0.6em 1.4em;
+    background-color: rgb(236, 240, 240);
+    border-radius: 0.4em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: capitalize;   
+}
+.btn:hover{
+    background-color: #e45349;
+    transition: .7s ease ;
+    color: #fff;
+    
+}
+
+/* modal */
+
+.modal{
+    background-color: rgb(7, 39, 39);
+    border-radius: 17px;
+    width: 55vmin;
+    padding: 2.5rem 1.8rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 3vmin;
+    display: none;
+   
+
+}
+.close-btn{
+    position: relative;
+    margin: auto;
+    display: grid;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.9rem;
+    color: #fff;
+    cursor: pointer;
+    text-align: end;
+}
+.output-color{
+    position: relative;
+    margin: auto;
+    display: grid;
+    width: 30vmin;
+    height: 30vmin;
+    background-color: #000000;
+    border: 6px solid #fff;
+    border-radius: 50%;
+ 
+
+}
+#output{
+    width: 100%;
+    background-color: transparent;
+    border: 2.5px dashed #fff;
+    font-size: 1.3rem;
+    padding: 0.4em 0.2rem;
+    margin: 1em 0;
+    border-radius: 8px;
+    color: #78bddd;
+    text-align: center;
+    outline: none;
+
+}
+.gen-btn{
+    width: 100%;
+    padding: 0.7em;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: rgb(6, 230, 200);
+}
