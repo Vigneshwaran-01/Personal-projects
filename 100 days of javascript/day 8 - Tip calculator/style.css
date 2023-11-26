@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--Ligh-grayish-cyan);
+}
+:root{
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Ligh-grayish-cyan: hsl(185, 41%, 84%);
+    --Verylight-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+
+}
+.logo{
+    margin: 5rem 0 3.5rem 0;
+    
+}
+.card{
+    background-color: var(--White);
+    width: 100%;
+   
+    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+  
+}
+
+.input{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.label-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+label{
+    color: var(--Dark-grayish-cyan);
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+.error-msg{
+    color: indianred;
+    font-weight: 700;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+.show-error-msg{
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+.inp-text{
+    background-color: var(--Ligh-grayish-cyan);
+    border: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: var(--Very-dark-cyan);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: right;
+    padding: 0.7rem  2.4rem;
+
+}
+input:focus{
+    outline: none;
+    border: 2px solid var(--Strong-cyan);
+}
+.inp-wrapper{
+    position: relative;
+
+
+}
+.card img{
+    position: absolute;
+    left: 2rem;
+    top: 1.3rem;
+}
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+   
+    padding: 1.2rem;
+}
+.btn{
+    width: 46%;
+    text-align: center;
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    cursor: pointer;
+
+}
+ .btn-wrapper .inp-text{
+    width: 46%;
+    padding: 10px;
+}
+.btn-active{
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+
+}
+.output{
+    background-color: var(--Very-dark-cyan);
+    width: 100%;
+    border-radius: 1.5rem;
+    padding: 2.2rem;
+    margin-top: 2rem;
+
+}
+.output .line-wrapper .line-output{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 1.4rem 0;
+}
+.title{
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.6rem;
+
+}
+.desc{
+    color: var(--Dark-grayish-cyan);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.value{
+    color: var(--Strong-cyan);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.reset-btn{
+    width: 100%;
+    background-color: var(--Strong-cyan);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--Very-dark-cyan);
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    margin-top: 3.2rem;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width:1110px) {
+    .card{
+        width: 64%;
+        flex-direction: row;
+        border-radius: 2.5rem;
+        align-items: stretch;
+        padding: 3.4rem;
+        gap: 1.5rem;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.05),0px 10px 20px rgba(0,0,0,0.05);
+       
+    }
+    .input{
+        width: 100%;
+        padding: 0 3.5rem 1.5rem 1.5rem;
+    }
+    .output{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4rem;
+
+    }
+}
